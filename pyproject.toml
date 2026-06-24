@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meshgrow"
+version = "0.1.0"
+description = "Unified cardiac + vascular mesh pipeline (nnU-Net, LinFlo-Net, SeqSeg)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Numi Sveinsson Cepero" }]
+dependencies = [
+  "PyYAML>=6",
+  "SimpleITK>=2",
+  "numpy<2",
+  "vtk>=9",
+  "scipy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+meshgrow = "meshgrow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["meshgrow*"]
+
+[tool.setuptools.package-data]
+meshgrow = ["data/pipeline.example.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
