@@ -10,8 +10,8 @@ def test_default_config_loads():
     assert cfg.modality == "ct"
     assert cfg.seqseg_scale == 0.1
     assert cfg.seqseg_max_n_steps == 200
-    assert "Dataset005" in cfg.seqseg_train_dataset("ct")
-    assert "Dataset006" in cfg.seqseg_train_dataset("mr")
+    assert "Dataset006" in cfg.seqseg_train_dataset("ct")
+    assert "Dataset005" in cfg.seqseg_train_dataset("mr")
 
 
 def test_modality_override():

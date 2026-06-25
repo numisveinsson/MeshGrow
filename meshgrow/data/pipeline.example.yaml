@@ -25,8 +25,8 @@ crop:
 
 seqseg:
   train_dataset:
-    ct: Dataset005_SEQAORTANDFEMOMR
-    mr: Dataset006_SEQAORTANDFEMOCT
+    ct: Dataset006_SEQAORTANDFEMOCT
+    mr: Dataset005_SEQAORTANDFEMOMR
   config_name:
     ct: global_aorta
     mr: global_aorta

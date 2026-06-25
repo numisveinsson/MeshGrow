@@ -37,8 +37,8 @@ SeqSeg nnU-Net weights are trained in **cm**. For typical mm NIfTI inputs, MeshG
 
 | Modality | SeqSeg dataset |
 |----------|----------------|
-| CT | `Dataset005_SEQAORTANDFEMOMR` |
-| MR | `Dataset006_SEQAORTANDFEMOCT` |
+| CT | `Dataset006_SEQAORTANDFEMOCT` |
+| MR | `Dataset005_SEQAORTANDFEMOMR` |
 
 ### 5. Combine
 

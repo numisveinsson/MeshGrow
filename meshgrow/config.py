@@ -65,8 +65,8 @@ class PipelineConfig:
     nnunet_fold: str = "all"
     nnunet_checkpoint: str = "checkpoint_best.pth"
     crop_padding_voxels: int = 20
-    seqseg_train_dataset_ct: str = "Dataset005_SEQAORTANDFEMOMR"
-    seqseg_train_dataset_mr: str = "Dataset006_SEQAORTANDFEMOCT"
+    seqseg_train_dataset_ct: str = "Dataset006_SEQAORTANDFEMOCT"
+    seqseg_train_dataset_mr: str = "Dataset005_SEQAORTANDFEMOMR"
     seqseg_config_name_ct: str = "global_aorta"
     seqseg_config_name_mr: str = "global_aorta"
     seqseg_img_ext: str = ".nii.gz"
@@ -182,10 +182,10 @@ def load_config(
         nnunet_checkpoint=nnunet.get("checkpoint", "checkpoint_best.pth"),
         crop_padding_voxels=int(subvol_pad),
         seqseg_train_dataset_ct=seqseg.get("train_dataset", {}).get(
-            "ct", "Dataset005_SEQAORTANDFEMOMR"
+            "ct", "Dataset006_SEQAORTANDFEMOCT"
         ),
         seqseg_train_dataset_mr=seqseg.get("train_dataset", {}).get(
-            "mr", "Dataset006_SEQAORTANDFEMOCT"
+            "mr", "Dataset005_SEQAORTANDFEMOMR"
         ),
         seqseg_config_name_ct=seqseg.get("config_name", {}).get(
             "ct", "global_aorta"
