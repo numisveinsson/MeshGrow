@@ -14,3 +14,4 @@ nnUNet_cardiac_weights/
 .DS_Store
 *output*/
 *.log
+test_data/
